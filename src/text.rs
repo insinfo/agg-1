@@ -337,8 +337,8 @@ fn draw_text_subpixel<T>(txt: &str, x: f64, y: f64,
 
         let glyph = font.glyph().get_glyph().unwrap();
         let dt = ft::Vector {
-            x: ((x - x.floor()) * 64.0).round() as i64,
-            y: ((y - y.floor()) * 64.0).round() as i64
+            x: ((x - x.floor()) * 64.0).round() as i32,
+            y: ((y - y.floor()) * 64.0).round() as i32
         };
         glyph.transform(None, Some(dt)).unwrap();
         let g = glyph.to_bitmap(ft::RenderMode::Normal, None).unwrap();

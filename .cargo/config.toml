@@ -1,0 +1,7 @@
+[target.i686-pc-windows-gnu.freetype]
+rustc-link-search = ["C:\\Path\\To\\binaries\\i686"]
+rustc-link-lib = ["freetype"]
+
+[target.x86_64-pc-windows-gnu.freetype]
+rustc-link-search = ["C:\\Path\\To\\binaries\\x86_64"]
+rustc-link-lib = ["freetype"]

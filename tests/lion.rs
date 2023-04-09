@@ -102,3 +102,5 @@ fn lion() {
     assert_eq!(agg::ppm::img_diff("tests/tmp/lion.png", "images/lion.png").unwrap(), true);
 
 }
+
+
